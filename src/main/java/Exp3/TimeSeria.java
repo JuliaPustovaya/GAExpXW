@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+package Exp3;
 
 public class TimeSeria {
 	private Integer t;
@@ -13,10 +13,10 @@ public class TimeSeria {
 
 	@Override
 	public String toString() {
-		return "TimeSeria{" +
+		return "Exp3.TimeSeria{" +
 				"t=" + t +
 				", Yt=" + Yt +
-				'}';
+				'}'+'\n';
 	}
 
 	public Integer getT() {
