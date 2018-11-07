@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 
 public class ReadFromFile {
     private static final Logger LOGGER = Logger.getLogger( ReadFromFile.class.getName() );
-
+    public static ArrayList<TimeSeria> timeSeria = new ArrayList<TimeSeria>();
     public static ArrayList<Double> openFile(String filePath) throws Exception {
         Scanner s = new Scanner(new File(filePath));
         ArrayList<Double> list = new ArrayList<Double>();
