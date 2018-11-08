@@ -3,8 +3,6 @@ package Exp3;
 public class TimeSeria {
 	private Integer t;
 	private Double Yt;
-	private Integer Lindex;
-
 
 	public TimeSeria(Integer t, Double yt) {
 		this.t = t;

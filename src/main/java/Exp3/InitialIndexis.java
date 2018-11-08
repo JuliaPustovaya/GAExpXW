@@ -7,9 +7,9 @@ import static Exp3.RunApplication.timeSeria;
 
 
 public class InitialIndexis {
-    private Double S0 = 0.0;
-    private Double b0 = 0.0;
-    private ArrayList<Double> c0 = new ArrayList<Double>();
+    public static Double S0 = 0.0;
+    public static Double b0 = 0.0;
+    public static ArrayList<Double> c0 = new ArrayList<Double>();
 
     public Double getS0() {
         return S0;
