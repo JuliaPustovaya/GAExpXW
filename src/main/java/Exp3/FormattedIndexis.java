@@ -40,12 +40,7 @@ public class FormattedIndexis {
 			tempC = GAMMA * (timeSeria.get(t - 1).getYt() / (double) tempS) + (1 - GAMMA) * updatedTimeSerias.get(t -L- 1).getcT();
 			updatedTimeSerias.add(new UpdatedTimeSeria(tempS, tempB, tempC));
 		}
-		//		double formCt () {
-		//		}
-		//		double formBt () {
-		//		}
-		//		double formF () {
-		//		}
+
 	return updatedTimeSerias;
 
 	}
