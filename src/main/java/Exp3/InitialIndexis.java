@@ -41,7 +41,7 @@ public class InitialIndexis {
 		return S0 = S0 / (double) L;
 	}
 
-	//TODO не забыть отредактировать
+
 	public double formB0() {
 		double sum = 0.0;
 		for (int i = 1; i <= L; i++) {
