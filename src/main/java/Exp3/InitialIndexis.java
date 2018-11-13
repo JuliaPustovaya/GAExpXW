@@ -14,24 +14,12 @@ public class InitialIndexis {
 		return S0;
 	}
 
-	public void setS0(Double s0) {
-		S0 = s0;
-	}
-
 	public Double getB0() {
 		return b0;
 	}
 
-	public void setB0(Double b0) {
-		this.b0 = b0;
-	}
-
 	public ArrayList<Double> getC0() {
 		return c0;
-	}
-
-	public void setC0(ArrayList<Double> c0) {
-		this.c0 = c0;
 	}
 
 	public Double formS0() {
@@ -41,11 +29,9 @@ public class InitialIndexis {
 		return S0 = S0 / (double) L;
 	}
 
-
 	public double formB0() {
 		double sum = 0.0;
 		for (int i = 1; i <= L; i++) {
-			System.out.println(timeSeria.get(L + i - 1).getYt() + "  " + timeSeria.get(i - 1).getYt());
 			sum = sum + (timeSeria.get(L + i - 1).getYt() - timeSeria.get(i - 1).getYt()) / (double) L;
 		}
 		return b0 = sum / (double) L;

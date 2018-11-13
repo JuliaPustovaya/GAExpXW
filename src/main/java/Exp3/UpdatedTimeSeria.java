@@ -1,47 +1,46 @@
 package Exp3;
 
+import static Exp3.RunApplication.timeSeria;
+import static Exp3.RunApplication.updatedTimeSerias;
+
+import java.text.DecimalFormat;
+
 public class UpdatedTimeSeria {
 
-	private Double sT=0.0;
-	private Double bT=0.0;
-	private Double cT=0.0;
+	private Double sT = 0.0;
+	private Double bT = 0.0;
+	private Double cT = 0.0;
 
 	public Double getsT() {
 		return sT;
 	}
 
-	public void setsT(Double sT) {
-		this.sT = sT;
-	}
-
 	@Override
 	public String toString() {
-		return "\n"+"{" +
-				"sT=" + sT +
-				", bT=" + bT +
-				", cT=" + cT +
-				'}'+"\n";
+		return
+				" sT=" + new DecimalFormat("#0.00").format(sT) +
+						", bT=" + new DecimalFormat("#0.00").format(bT) +
+						", cT=" + new DecimalFormat("#0.00").format(cT);
 	}
 
 	public Double getbT() {
 		return bT;
 	}
 
-	public void setbT(Double bT) {
-		this.bT = bT;
-	}
-
 	public Double getcT() {
 		return cT;
-	}
-
-	public void setcT(Double cT) {
-		this.cT = cT;
 	}
 
 	public UpdatedTimeSeria(Double sT, Double bT, Double cT) {
 		this.sT = sT;
 		this.bT = bT;
 		this.cT = cT;
+	}
+
+	public static void getUpdatedTimeSeria() {
+		System.out.println("Полученные S, b, c ");
+		for (int i = 0; i < updatedTimeSerias.size(); i++) {
+			System.out.println("i=  " + i + "  y= " + timeSeria.get(i) + updatedTimeSerias.get(i));
+		}
 	}
 }

@@ -20,11 +20,10 @@ public class ReadFromFile {
 		s.close();
 		int removableQuantityOfTimeSeriaForComparion = (int) (list.size() * 0.25);
 		//int removableQuantityOfTimeSeriaForComparion = 6;
-//
-
-		System.out.println("Исходные данные:" + listForTimeSeria);
+		//
+		System.out.println("Размер исх.данных: " + listForTimeSeria.size() + "\nДанные: " + listForTimeSeria);
 		Collections.reverse(listOfRealValue);
-		System.out.println("Исходные данные для сравнения : " + listOfRealValue);
+		//System.out.println("Исходные данные для сравнения : " + listOfRealValue);
 		return listForTimeSeria;
 	}
 
@@ -33,8 +32,7 @@ public class ReadFromFile {
 		dialog.setMode(FileDialog.LOAD);
 		dialog.setVisible(true);
 		String file = dialog.getFile();
-		System.out.println(file + " chosen.");
+		//	LOGGER.info("Open text file to read data");
 		readDataFromFile(dialog.getDirectory() + file, listForTimeSeria, listOfRealValue);
-		LOGGER.info("Open text file to read data");
 	}
 }

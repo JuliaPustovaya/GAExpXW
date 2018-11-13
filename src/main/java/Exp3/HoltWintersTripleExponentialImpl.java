@@ -104,8 +104,8 @@ public class HoltWintersTripleExponentialImpl {
 		 sum += y[i];
 		 }
 
-		 return sum / period;
-		 **/
+		 return sum /(double) period;
+		    **/
 		return y[0];
 	}
 
