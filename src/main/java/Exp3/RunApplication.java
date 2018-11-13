@@ -25,10 +25,10 @@ public class RunApplication {
 		System.out.println(updatedTimeSerias);
 		WriteToFile.writeToFile(updatedTimeSerias, "Updated St, Bt, Ct");
 		Forecasting forecasting = new Forecasting();
-		forecasting.getForecastedValues(updatedTimeSerias, 12);
+		forecasting.getForecastedValues(updatedTimeSerias, 10);
 		System.out.println("Forecasted values: " + forecastResult);
 		WriteToFile.writeToFile(forecastResult, "Forecasted values : ");
-		ErrorCoeficients.getMSE(realResult, forecastResult);
-		ErrorCoeficients.getE(realResult, forecastResult);
+	//	ErrorCoeficients.getMSE(realResult, forecastResult);
+	//	ErrorCoeficients.getE(realResult, forecastResult);
 	}
 }

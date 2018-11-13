@@ -15,17 +15,13 @@ public class ReadFromFile {
 		Scanner s = new Scanner(new File(filePath));
 		ArrayList<TimeSeria> list = new ArrayList<>();
 		while (s.hasNext()) {
-			list.add(new TimeSeria(Double.parseDouble(s.next())));
+			listForTimeSeria.add(new TimeSeria(Double.parseDouble(s.next())));
 		}
 		s.close();
 		int removableQuantityOfTimeSeriaForComparion = (int) (list.size() * 0.25);
 		//int removableQuantityOfTimeSeriaForComparion = 6;
-		for (int i = 0; i < list.size() - removableQuantityOfTimeSeriaForComparion; i++) {
-			listForTimeSeria.add(list.get(i));
-		}
-		for (int i = list.size() - 1; i >= (list.size() - removableQuantityOfTimeSeriaForComparion); i--) {
-			listOfRealValue.add(list.get(i).getYt());
-		}
+//
+
 		System.out.println("Исходные данные:" + listForTimeSeria);
 		Collections.reverse(listOfRealValue);
 		System.out.println("Исходные данные для сравнения : " + listOfRealValue);
