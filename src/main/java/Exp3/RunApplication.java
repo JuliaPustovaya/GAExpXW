@@ -33,6 +33,11 @@ public class RunApplication {
 		Forecasting forecasting = new Forecasting();
 		forecasting.getForecastedValues(updatedTimeSerias, 10);
 		printForecastedValues(forecastResult);
+
+		forecastResult.clear();
+		forecasting.getForecastedValuesUpdated(updatedTimeSerias, 10);
+		printForecastedValues(forecastResult);
+
 		WriteToFile.writeToFile(forecastResult, "Forecasted values : ");
 		//	ErrorCoeficients.getMSE(realResult, forecastResult);
 		//	ErrorCoeficients.getE(realResult, forecastResult);
